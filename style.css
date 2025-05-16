@@ -19,6 +19,23 @@ body {
   background-color: black;
 }
 
+.arrow {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
 header {
   height: 90px;
   width: 100%;
@@ -737,10 +754,10 @@ section button:hover {
   gap: 15px;
 }
 .section4 .SongList .ListLine {
-  height: 3px;
+  height: 2px;
   width: 80%;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .section4 .SongList .SongName {
   width: 80%;
@@ -870,9 +887,111 @@ section button:hover {
   transform: rotate(60deg);
 }
 
-footer {
+.section5 {
   width: 100%;
   height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section5 .JoinText {
+  width: 20%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.section5 form {
+  height: 40%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section5 form .checkbox {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.section5 form .email {
+  width: 100%;
+  height: 40px;
+  border: 2px solid white;
+  outline: none;
+  background-color: rgba(0, 255, 255, 0);
+  color: white;
+}
+.section5 form button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 100;
+  transition: 0.3s;
+}
+.section5 form button:hover {
+  background-color: rgb(201, 198, 198);
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+footer .SmallWhiteLine {
+  height: 10px;
+  width: 70px;
+  background-image: url(/პატარა\ თეთრი\ ზოლი.png);
+  background-position: center;
+  background-size: 100%;
+}
+footer .FollowUs {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+footer .FooterIcons {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+footer .FooterText {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-left: 25px;
+}
+footer .FooterText .wix {
+  width: 5%;
+  height: 100%;
+  padding-left: 10px;
+}
+footer .wix a p {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1050px) {
@@ -955,6 +1074,23 @@ footer {
   header .login h3:HOVER {
     cursor: pointer;
   }
+  .section5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .JoinText {
+    width: 30%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 900px) {
   header {
@@ -1034,6 +1170,58 @@ footer {
     font-size: 15px;
   }
   header .login h3:HOVER {
+    cursor: pointer;
+  }
+  .section5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .JoinText {
+    width: 35%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .section5 form {
+    height: 40%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section5 form .checkbox {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .section5 form .email {
+    width: 100%;
+    height: 40px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+  }
+  .section5 form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    transition: 0.3s;
+  }
+  .section5 form button:hover {
+    background-color: rgb(201, 198, 198);
     cursor: pointer;
   }
 }
@@ -1117,8 +1305,41 @@ footer {
   header .login h3:HOVER {
     cursor: pointer;
   }
+  .section5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .JoinText {
+    width: 40%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 720px) {
+  .arrow {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    display: flex;
+  }
   header {
     height: 90px;
     width: 100%;
@@ -1305,6 +1526,59 @@ footer {
   .NewAlbum p {
     font-weight: 100;
     font-size: 25px;
+  }
+  .section5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .JoinText {
+    width: 45%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .section5 form {
+    height: 40%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section5 form .checkbox {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .section5 form .email {
+    width: 100%;
+    height: 40px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+  }
+  .section5 form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    transition: 0.3s;
+  }
+  .section5 form button:hover {
+    background-color: rgb(201, 198, 198);
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 580px) {
@@ -1517,6 +1791,59 @@ footer {
     align-items: center;
     padding-right: 15px;
     font-size: 15px;
+  }
+  .section5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .JoinText {
+    width: 55%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .section5 form {
+    height: 40%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section5 form .checkbox {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .section5 form .email {
+    width: 100%;
+    height: 40px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+  }
+  .section5 form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    transition: 0.3s;
+  }
+  .section5 form button:hover {
+    background-color: rgb(201, 198, 198);
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1788,10 +2115,10 @@ footer {
     gap: 15px;
   }
   .section4 .SongList .ListLine {
-    height: 3px;
+    height: 2px;
     width: 80%;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 10%;
   }
   .section4 .SongList .SongName {
     width: 80%;
@@ -2064,10 +2391,10 @@ footer {
     gap: 15px;
   }
   .section4 .SongList .ListLine {
-    height: 3px;
+    height: 2px;
     width: 80%;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 10%;
   }
   .section4 .SongList .SongName {
     width: 80%;
@@ -2195,6 +2522,103 @@ footer {
     background-position: center;
     margin-bottom: 10px;
     transform: rotate(60deg);
+  }
+  .section5 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+  }
+  .section5 .JoinText {
+    width: 70%;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .section5 form {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section5 form .checkbox {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .section5 form .email {
+    width: 100%;
+    height: 40px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+  }
+  .section5 form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    transition: 0.3s;
+  }
+  .section5 form button:hover {
+    background-color: rgb(201, 198, 198);
+    cursor: pointer;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  footer .SmallWhiteLine {
+    height: 10px;
+    width: 70px;
+    background-image: url(/პატარა\ თეთრი\ ზოლი.png);
+    background-position: center;
+    background-size: 100%;
+  }
+  footer .FollowUs {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  footer .FooterIcons {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+  }
+  footer .FooterText {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 15px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 420px) {
