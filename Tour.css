@@ -275,7 +275,6 @@ section .SectionChild .box .left {
 section .SectionChild .box .left .MiniBox1 {
   width: 100%;
   height: 40%;
-  background-color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   display: flex;
@@ -971,5 +970,75 @@ footer .wix a p {
     flex-direction: row-reverse;
     padding-right: 15px;
     text-align: center;
+  }
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  section .SectionChild {
+    width: 100%;
+    height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section .SectionChild .line {
+    width: 98%;
+    height: 2.5px;
+    background-color: white;
+  }
+  section .SectionChild .box {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+  }
+  section .SectionChild .box .left {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .SectionChild .box .left .MiniBox1 {
+    width: 100%;
+    height: 40%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section .SectionChild .box .left .MiniBox2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  section .SectionChild .box .right {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2px;
+  }
+  section .SectionChild .box .right button {
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
   }
 }/*# sourceMappingURL=Tour.css.map */
